@@ -700,6 +700,11 @@ Emoji ใช้เพื่อ:
 ใช้ emoji อย่างมีระบบ  
 ไม่ spam จนรก
 
+Favicon guideline:
+
+* ใช้สัญลักษณ์แนว racing/energy ที่อ่านง่ายบนแท็บ browser
+* โทนสีสอดคล้องกับระบบ (dark base + accent)
+
 ---
 
 # Visual Effects
