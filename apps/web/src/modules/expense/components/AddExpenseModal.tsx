@@ -106,8 +106,9 @@ export function AddExpenseModal({ open, onClose, onSubmitExpense }: AddExpenseMo
 
         <Input
           id="custom-expense-label"
-          label="รายการเพิ่มเติม (ไม่บังคับ)"
+          label="รายการเพิ่มเติม"
           placeholder="เช่น ค่าดอกไม้, ค่าขนม, ค่าแฟ"
+          helperText="เลือกหมวด หรือกรอกรายการ อย่างน้อย 1 อย่าง"
           value={form.watch("customLabel")}
           onChange={(event) => {
             form.setValue("customLabel", event.target.value, { shouldValidate: false, shouldDirty: true });
@@ -124,7 +125,9 @@ export function AddExpenseModal({ open, onClose, onSubmitExpense }: AddExpenseMo
           <p className="text-xs text-danger">สัญญาณสะดุดชั่วคราว ลองกดอีกทีได้เลย ({form.formState.errors.root.message})</p>
         ) : null}
 
-        <ExpenseSubmitButton isSubmitting={form.formState.isSubmitting} />
+        <div className="sticky bottom-0 -mx-2 rounded-control bg-surfaceAlt/95 px-2 py-2 backdrop-blur">
+          <ExpenseSubmitButton isSubmitting={form.formState.isSubmitting} />
+        </div>
       </form>
     </Modal>
   );

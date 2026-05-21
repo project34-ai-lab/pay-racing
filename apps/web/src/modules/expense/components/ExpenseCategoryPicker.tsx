@@ -29,7 +29,7 @@ export function ExpenseCategoryPicker({ value, onChange, options, errorMessage }
               type="button"
               onClick={() => onChange(option.value)}
               className={cn(
-                "min-h-14 rounded-control border px-2 py-2 text-sm font-semibold transition duration-fast ease-race",
+                "min-h-16 rounded-control border px-2 py-2 text-sm font-semibold leading-snug transition duration-fast ease-race",
                 isActive
                   ? "border-overtake/65 bg-overtake/20 text-overtake shadow-redGlow"
                   : "border-borderSoft bg-surfaceAlt/60 text-text",

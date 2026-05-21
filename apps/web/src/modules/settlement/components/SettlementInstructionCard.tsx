@@ -73,7 +73,7 @@ export function SettlementInstructionCard({
             <Button
               size="md"
               variant="ghost"
-              className="h-8 shrink-0 px-2 text-xs"
+              className="h-10 shrink-0 px-3 text-xs"
               onClick={() => void handleCopyPromptPay()}
             >
               {copiedPromptPay ? "คัดลอกแล้ว ✓" : "คัดลอก"}

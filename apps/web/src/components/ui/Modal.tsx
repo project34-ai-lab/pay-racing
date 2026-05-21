@@ -41,7 +41,7 @@ export function Modal({ open, title, onClose, children }: ModalProps): ReactElem
           >
             <header className="mb-4 flex items-center justify-between gap-3">
               <h2 className="font-display text-lg font-bold text-text">{title}</h2>
-              <Button variant="ghost" size="md" onClick={onClose} aria-label="ปิดหน้าต่างเพิ่มค่าเสียหาย">
+              <Button variant="ghost" size="md" onClick={onClose} aria-label="ปิดหน้าต่าง">
                 ปิด
               </Button>
             </header>

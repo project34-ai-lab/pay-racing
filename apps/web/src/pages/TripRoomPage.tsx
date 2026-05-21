@@ -499,7 +499,7 @@ export function TripRoomPage(): ReactElement {
           <div className="flex items-center justify-between gap-2">
             <div className="inline-flex min-w-0 flex-col rounded-chip border border-podium/45 bg-podium/20 px-3 py-1.5">
               <span className="truncate text-xs font-semibold uppercase tracking-[0.08em] text-podium">{tripName}</span>
-              <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-nitro">code: {tripId}</span>
+              <span className="text-[10px] font-semibold uppercase tracking-[0.1em] text-nitro">รหัสอีเวนต์: {tripId}</span>
             </div>
             <Badge tone="live">{myRoleLabel}</Badge>
           </div>

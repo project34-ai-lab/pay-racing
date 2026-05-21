@@ -147,7 +147,7 @@ Codex ควรใช้ reference เหล่านี้เป็น mood ins
 * “หมูกระทะทำพิษอีกแล้ว 🍖”
 * “เติมน้ำมันที กระเป๋าสั่นเลย 🔥”
 * “Trip: กาญจนบุรี”
-* “code: PVXS-UMVQ”
+* “รหัสอีเวนต์: PVXS-UMVQ”
 * “Creator: DriftNoi”
 * “Member: RouteRider”
 
@@ -341,7 +341,7 @@ Buttons ต้อง:
 Primary button example:
 
 * “บันทึกรายการเลย 🚗✨”
-* “+ ออกตังค์”
+* “+ เพิ่มค่าใช้จ่าย”
 * “ปิดสนาม 🏁”
 
 Button style:
@@ -351,6 +351,7 @@ Button style:
 * strong shadow/glow
 * active scale feedback
 * high contrast
+* tap target ขั้นต่ำควรใกล้เคียง 40-44px
 
 ---
 

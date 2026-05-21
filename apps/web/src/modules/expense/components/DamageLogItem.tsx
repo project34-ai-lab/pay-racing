@@ -42,7 +42,7 @@ export function DamageLogItem({ expense, payerNickname, canDelete, onDeleteExpen
   return (
     <article className="rounded-control border border-borderSoft bg-track/55 px-3 py-3">
       <div className="flex items-start justify-between gap-2">
-        <div>
+        <div className="min-w-0">
           <p className="text-sm font-semibold text-text">{buildExpenseLabel(expense)}</p>
           <p className="text-xs text-muted">
             {payerNickname} • {formatTripTime(expense.createdAtIso)}
@@ -52,7 +52,7 @@ export function DamageLogItem({ expense, payerNickname, canDelete, onDeleteExpen
         <div className="flex flex-col items-end gap-2">
           <p className="font-display text-xl font-bold text-overtake">{formatMoney(expense.amount)}</p>
           {canDelete ? (
-            <Button variant="ghost" size="md" className="h-8 px-2 text-xs" onClick={() => onDeleteExpense(expense.id)}>
+            <Button variant="ghost" size="md" className="h-10 px-3 text-xs" onClick={() => onDeleteExpense(expense.id)}>
               ลบรายการนี้
             </Button>
           ) : null}

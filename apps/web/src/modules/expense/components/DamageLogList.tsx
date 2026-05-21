@@ -18,7 +18,7 @@ export function DamageLogList({ expenses, members, currentMemberToken, onDeleteE
   if (expenses.length === 0) {
     return (
       <Card className="space-y-2">
-        <h2 className="font-display text-lg font-semibold text-text">Damage Logs</h2>
+        <h2 className="font-display text-lg font-semibold text-text">รายการค่าใช้จ่าย</h2>
         <p className="text-sm text-muted">ยังไม่มีรายการค่าใช้จ่าย ลองเพิ่มรายการแรกได้เลย 🐢</p>
       </Card>
     );
@@ -26,13 +26,13 @@ export function DamageLogList({ expenses, members, currentMemberToken, onDeleteE
 
   return (
     <Card className="space-y-3">
-      <h2 className="font-display text-lg font-semibold text-text">Damage Logs</h2>
+      <h2 className="font-display text-lg font-semibold text-text">รายการค่าใช้จ่าย</h2>
       <div className="space-y-2">
         {expenses.map((expense: Expense) => (
           <DamageLogItem
             key={expense.id}
             expense={expense}
-            payerNickname={nicknameByToken.get(expense.payerToken) ?? expense.payerNickname ?? "Unknown Racer"}
+            payerNickname={nicknameByToken.get(expense.payerToken) ?? expense.payerNickname ?? "สมาชิกไม่ทราบชื่อ"}
             canDelete={expense.payerToken === currentMemberToken}
             onDeleteExpense={onDeleteExpense}
           />

@@ -9,7 +9,7 @@ type AddExpenseButtonProps = {
 export function AddExpenseButton({ onClick }: AddExpenseButtonProps): ReactElement {
   return (
     <Button onClick={onClick} size="lg" fullWidth>
-      + ออกตังค์
+      + เพิ่มค่าใช้จ่าย
     </Button>
   );
 }

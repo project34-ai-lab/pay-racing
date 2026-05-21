@@ -114,7 +114,7 @@ export function PromptPayDirectoryCard({ members, currentMemberToken, onUpdatePr
                   <Button
                     size="md"
                     variant="ghost"
-                    className="h-8 px-2 text-xs"
+                    className="h-10 px-3 text-xs"
                     onClick={() => void handleCopy(entry.token, entry.promptPay)}
                   >
                     {copiedToken === entry.token ? "คัดลอกแล้ว ✓" : "คัดลอก"}
@@ -123,7 +123,7 @@ export function PromptPayDirectoryCard({ members, currentMemberToken, onUpdatePr
                     <Button
                       size="md"
                       variant="ghost"
-                      className="h-8 px-2 text-xs"
+                      className="h-10 px-3 text-xs"
                       onClick={() => handleStartEdit(entry.token, entry.promptPay)}
                     >
                       แก้ไข
