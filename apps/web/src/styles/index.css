@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@600;700&family=Noto+Sans+Thai:wght@400;500;600;700&family=Prompt:wght@400;500;600;700&display=swap");
+@import "./tokens.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html,
+  body,
+  #root {
+    min-height: 100dvh;
+  }
+
+  html {
+    color-scheme: dark;
+    background: var(--color-bg-cockpit);
+    font-family: var(--font-body);
+  }
+
+  body {
+    margin: 0;
+    color: var(--color-text-primary);
+    background:
+      radial-gradient(circle at 10% 6%, rgba(255, 154, 31, 0.12), transparent 28%),
+      radial-gradient(circle at 88% 2%, rgba(67, 212, 255, 0.13), transparent 32%),
+      linear-gradient(175deg, #06080d 0%, #0f1828 45%, #080c15 100%);
+  }
+
+  * {
+    box-sizing: border-box;
+  }
+}

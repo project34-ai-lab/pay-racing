@@ -1,0 +1,51 @@
+:root {
+  /* Color tokens */
+  --color-bg-cockpit: #07090f;
+  --color-bg-track: #0e1523;
+  --color-surface-1: #111a2b;
+  --color-surface-2: #1a243a;
+  --color-text-primary: #f3f6ff;
+  --color-text-secondary: #a9b2ca;
+  --color-border-soft: rgba(255, 255, 255, 0.12);
+
+  --color-turbo-red: #ff4d5f;
+  --color-overtake-orange: #ff9a1f;
+  --color-neon-blue: #43d4ff;
+  --color-podium-gold: #ffc74f;
+  --color-win-green: #33d18b;
+  --color-danger: #ff5f66;
+
+  /* Spacing tokens */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-7: 1.75rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+
+  /* Typography tokens */
+  --font-body: "Prompt", "Noto Sans Thai", system-ui, sans-serif;
+  --font-display: "Chakra Petch", "Prompt", "Noto Sans Thai", sans-serif;
+
+  /* Radius tokens */
+  --radius-sm: 0.625rem;
+  --radius-md: 0.875rem;
+  --radius-lg: 1.125rem;
+  --radius-xl: 1.5rem;
+  --radius-pill: 999px;
+
+  /* Shadow and glow tokens */
+  --shadow-card: 0 12px 30px rgba(0, 0, 0, 0.35);
+  --shadow-soft: 0 6px 16px rgba(0, 0, 0, 0.28);
+  --glow-blue: 0 0 0 1px rgba(67, 212, 255, 0.2), 0 0 24px rgba(67, 212, 255, 0.26);
+  --glow-red: 0 0 0 1px rgba(255, 77, 95, 0.2), 0 0 20px rgba(255, 77, 95, 0.24);
+
+  /* Motion timing tokens */
+  --motion-fast: 140ms;
+  --motion-base: 220ms;
+  --motion-slow: 340ms;
+  --ease-out-race: cubic-bezier(0.2, 0.8, 0.2, 1);
+}
